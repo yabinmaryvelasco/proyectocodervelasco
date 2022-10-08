@@ -1,0 +1,42 @@
+/*FOOTER*/
+
+.pie-pagina {
+  /*padding*/
+  width: $w-100;
+  background-color: $gris;
+}
+.pie-pagina .grupo-2 {
+  width: $w-20;
+  max-width: 1200%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 5px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-2 .box .pie__icon--sm {
+  width: $w-50;
+  padding: $p-10;
+}
+.pie-pagina .grupo-2 .box .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: $w-50;
+  height: 50px;
+  line-height: 45px;
+}
+.pie-pagina .grupo-1 h4 {
+  padding: $p-20;
+  margin-bottom: $mb;
+  font-size: $fs-20;
+  color: $botoneraColor;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}

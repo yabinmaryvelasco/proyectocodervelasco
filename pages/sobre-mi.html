@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="../img/logo/logo.png" type="image/x-icon" />
 
+    <!-- Meta Seo-->
+    <meta name="description" content="Soy Yabinmary Velasco, web developer. puedes confiarme la creacion de tu sitio web o puedo rediseñar tu pagina para darle un estilo mas fresco" />
+    <meta name="keywords" content="portafolio, argentina, sitio web" />
+    <meta name="author" content="Yabinmary Velasco" />
+
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -15,9 +20,9 @@
     />
 
     <!-- MI CSS-->
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/main.css" />
 
-    <title>Portafolio de Yabinmary Velasco</title>
+    <title>Descripción del portafolio de Yabinmary Velasco</title>
   </head>
   <body>
     <!--INICIA NAV -->
@@ -50,44 +55,22 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bolder" href="../otras-pag/sobre-mi.html"
+              <a class="nav-link fw-bolder" href="./sobre-mi.html"
                 >Sobre mi</a
               >
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle fw-bolder"
-                href="../otras-pag/servicios.html"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+            <li class="nav-item">
+              <a class="nav-link fw-bolder" href="./servicios.html"
+                >Servicios</a
               >
-                Servicios
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item fw-bolder" href="#"
-                    >Pagina Web desde cero</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item fw-bolder" href="#"
-                    >Rediseñar tu Pgina Web</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item fw-bolder" href="#">Apps moviles</a>
-                </li>
-              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bolder" href="../otras-pag/portafolio.html"
+              <a class="nav-link fw-bolder" href="./portafolio.html"
                 >Portafolio</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bolder" href="../otras-pag/contacto.html"
+              <a class="nav-link fw-bolder" href="./contacto.html"
                 >Contacto</a
               >
             </li>
@@ -97,31 +80,35 @@
     </nav>
 
     <!--FIN DE NAV-->
+
     <header>
-      <h1 class="contacto">Contacto</h1>
+      <h1 class="sobre">Sobre mi</h1>
     </header>
+
+    <!-- INICIO MAIN-->
     <main>
-      <section>
-        <form action="">
-          <h2 class="formulario">Formulario</h2>
-          <label for="name">Nombre:</label>
-          <input type="text" id="name" />
-          <br />
-          <label for="mail">Email:</label>
-          <input type="email" id="mail" />
-          <br />
-          <label for="tel">Telefono</label>
-          <input type="tel" id="tel" />
-          <br />
-          <label for="mensaje">Consulta</label>
-          <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
-          <br />
-          <input type="reset" value="Cancelar" />
-          <input type="submit" value="Enviar" />
-        </form>
+      <section class="py-3">
+        <div class="row">
+          <article class="col-sm-12 col-md-6 col-lg-6 text-center">
+            <p class="parrafo h6">Hola, me puedes decir Yabi. Soy una chica de Venezuela
+                actualmente viviendo en Argentina, me gusta salir con amigos y
+                conocer sitios nuevos. Para mis creaciones suelo visitar museos
+                y lugares llenos de creatividad para inspirarme y poder hacer de
+                tu sitio web algo maravilloso.</p>
+            </article>
+          </article>
+          <article class="col-sm-12 col-md-6 col-lg-6">
+            <img
+              src="../img/parasobremi/indexyo.png"
+              alt="dibujo ilustrado de mi"
+              class="img-fluid w-100"
+            />
+          </article>
+        </div>
       </section>
     </main>
-    <br />
+    <!-- FIN MAIN-->
+
     <!-- INICIO FOOTER-->
     <footer class="pie-pagina">
       <div class="grupo-1">
@@ -159,5 +146,12 @@
       </div>
     </footer>
     <!-- FIN FOOTER-->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

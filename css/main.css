@@ -1,11 +1,13 @@
-/*BOOTSTRAP*/
-
+/*NAVBAR*/
 .bg-white {
   background-color: #f9f8f9;
 }
+
 .bg-violet {
   background-color: #c293cc;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 #botonera ul li a {
   color: #5e538a;
 }
@@ -13,14 +15,26 @@
   width: 60px;
 }
 
-/*TERMINA BOOTSTRAP*/
-
-.img-index {
-  animation-name: animacionAlfa;
-  animation-duration: 5s;
+.text-center {
+  padding: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.sobre {
+h2 {
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+.sobre, .contacto, .portafolio, .servicios {
   padding: 20px;
   margin-bottom: 25px;
   font-size: 30px;
@@ -31,32 +45,80 @@
   justify-content: space-around;
   align-items: center;
 }
+
 .parrafo {
-  padding: 20px;
-  width: 50%;
-  font-size: 15px;
-  text-align: left;
-  animation-name: animacionAlfa;
-  animation-duration: 5s;
+  width: 100%;
 }
-.index__img--fluid {
-  padding-left: 20px;
-  margin: 60px;
+
+.card-text {
+  padding: 0;
+  width: 100%;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 15px;
+  text-align: initial;
+}
+
+.card {
+  margin: 80px;
+  border: 2px solid #c293cc;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.servicios2__img--fluid, .img__portafolio--fluid, .servicios3__img--fluid {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.servicios3__img--fluid {
+  width: 50%;
+}
+
+.over {
+  position: relative;
+  width: 50%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  border-radius: 8px;
+  background-color: #5e538a;
+}
+
+.over:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.img-fluid {
+  max-width: 50%;
 }
 
 /*PORTAFOLIO*/
-
 .img__portafolio--fluid {
-  width: 270px;
-  padding: 50px;
+  width: 100%;
 }
-.portafolio {
-  color: #5649bb;
-  font-size: 200%;
-  padding: 50px;
-  margin: 50px;
-  text-align: center;
-}
+
 p {
   padding: 20px;
   width: 50%;
@@ -64,17 +126,16 @@ p {
   text-align: left;
 }
 
-/* FORMULARIO*/
-
-.contacto {
-  color: #5649bb;
-  font-size: 200%;
-  padding: 40px;
-  margin: 70px;
-  text-align: center;
+.texto {
+  padding: 20px;
+  width: 100%;
+  text-align: justify;
+  font-family: arial, helvetica, sans-serif;
 }
+
+/* FORMULARIO*/
 form {
-  width: 450px;
+  width: 450%;
   margin: auto;
   background: rgba(128, 128, 128, 0.516);
   padding: 10px 20px;
@@ -82,16 +143,18 @@ form {
   margin-top: 20px;
   border-radius: 7px;
 }
+
 .formulario {
-  color: #ab4ea0;
+  color: #bc3fb8;
   text-align: center;
   margin: 0;
   font-size: 30px;
   margin-bottom: 20px;
 }
+
 input,
 textarea {
-  width: 50%;
+  width: 80%;
   margin-bottom: 10px;
   padding: 0;
   box-sizing: border-box;
@@ -100,6 +163,7 @@ textarea {
   flex-direction: column;
   align-items: center;
 }
+
 textarea {
   min-height: 100px;
   max-height: 200px;
@@ -107,15 +171,15 @@ textarea {
 }
 
 /*FOOTER*/
-
 .pie-pagina {
   /*padding*/
   width: 100%;
   background-color: rgba(204, 200, 200, 0.516);
 }
+
 .pie-pagina .grupo-2 {
   width: 20%;
-  max-width: 1200px;
+  max-width: 1200%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -126,17 +190,20 @@ textarea {
   justify-content: center;
   align-items: center;
 }
+
 .pie-pagina .grupo-2 .box .pie__icon--sm {
-  width: 50px;
+  width: 50%;
   padding: 10px;
 }
+
 .pie-pagina .grupo-2 .box .red-social a {
   display: inline-block;
   text-decoration: none;
-  width: 50px;
+  width: 50%;
   height: 50px;
   line-height: 45px;
 }
+
 .pie-pagina .grupo-1 h4 {
   padding: 20px;
   margin-bottom: 25px;
@@ -149,35 +216,37 @@ textarea {
   align-items: center;
 }
 
-/* ANIMACIONES */
-@keyframes animacionAlfa {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 /* RESPONSIVE*/
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) and (min-width: 280px) {
   .pie-pagina .grupo-2 {
     width: 100%;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-    padding: 35px 0px;
+    grid-gap: 10%;
+    padding: 10% 0%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-
   .parrafo {
-    padding: 20px;
-    margin: auto;
-    width: 80%;
-    font-size: 15px;
-    text-align: center;
+    width: 100%;
+  }
+  .card {
+    width: 49.99999%;
+    margin: 30px 50px;
+  }
+  .img-fluid {
+    max-width: 50%;
+    margin: 90px;
+    margin-top: 0%;
+  }
+  .card-portafolio {
+    max-width: 80%;
+    margin: 10px 35px;
+  }
+  form {
+    width: 270px;
   }
 }
+
+/*# sourceMappingURL=main.css.map */

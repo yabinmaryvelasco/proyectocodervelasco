@@ -1,0 +1,61 @@
+//Variables Globales
+
+$navColor: #f9f8f9;
+$secondaryColor: #c293cc;
+$bordeColor: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+$botoneraColor: #5e538a;
+$encabezadoColor: #aa61ba;
+$whiteColor: white;
+$grisOscuro: rgba(128, 128, 128, 0.516);
+$gris: rgba(204, 200, 200, 0.516);
+$rosa: #bc3fb8;
+$p-20: 20px;
+$p-0: 0;
+$p-10: 10px;
+$mb: 25px;
+$fs-30: 30px;
+$fs-15: 15px;
+$fs-20: 20px;
+$w-100: 100%;
+$w-90: 90%;
+$w-50: 50%;
+$w-450: 450%;
+$w-80: 80%;
+$w-20: 20%;
+$font-family: arial, helvetica, sans-serif;
+
+/*NAVBAR*/
+
+.bg-white {
+  background-color: $navColor;
+}
+.bg-violet {
+  background-color: $secondaryColor;
+  box-shadow: $bordeColor;
+}
+#botonera {
+  ul {
+    li a {
+      color: $botoneraColor;
+    }
+  }
+  img {
+    width: 60px;
+  }
+}
+
+.text-center {
+  padding: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2 {
+  font-size: 20px;
+}
+h1 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 25px;
+}

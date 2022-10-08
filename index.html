@@ -4,7 +4,13 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="../img/logo/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./img/logo/logo.png" type="image/x-icon" />
+
+    <!-- Meta Seo-->
+    <meta name="description" content="Creo tu sitio web desde cero con diseños creativos y divertidos, 100% responsive para que los usuarios puedan ingresar desde cualquier dispositivo" />
+    <meta name="keywords" content="portafolio, web developer" />
+    <meta name="author" content="Yabinmary Velasco" />
+    <meta name="robots" content="index,follow" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -15,7 +21,7 @@
     />
 
     <!-- MI CSS-->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/main.css" />
 
     <title>Portafolio de Yabinmary Velasco</title>
   </head>
@@ -23,9 +29,9 @@
     <!--INICIA NAV -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white" id="botonera">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="./index.html">
           <img
-            src="img/logo/logo.png"
+            src="./img/logo/logo.png"
             alt="logo de portafolio yabinmary velasco"
         /></a>
         <button
@@ -48,49 +54,27 @@
               <a
                 class="nav-link active fw-bolder"
                 aria-current="page"
-                href="index.html"
+                href="./index.html"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bolder" href="otras-pag/sobre-mi.html"
+              <a class="nav-link fw-bolder" href="./pages/sobre-mi.html"
                 >Sobre mi</a
               >
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle fw-bolder"
-                href="otras-pag/servicios.html"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+            <li class="nav-item">
+              <a class="nav-link fw-bolder" href="./pages/servicios.html"
+                >Servicios</a
               >
-                Servicios
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item fw-bolder" href="#"
-                    >Pagina Web desde cero</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item fw-bolder" href="#"
-                    >Rediseñar tu Pagina Web</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item fw-bolder" href="#">Apps moviles</a>
-                </li>
-              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bolder" href="otras-pag/portafolio.html"
+              <a class="nav-link fw-bolder" href="./pages/portafolio.html"
                 >Portafolio</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bolder" href="otras-pag/contacto.html"
+              <a class="nav-link fw-bolder" href="./pages/contacto.html"
                 >Contacto</a
               >
             </li>
@@ -110,14 +94,16 @@
             <h1>Yabinmary Velasco</h1>
             <h3>Web Developer</h3>
             <h2>Soy Desarrolladora Web y Full Stack</h2>
-            <button type="button" class="btn bg-violet text-violet btn-lg mb-3">
-              Contratame!
+            <a href="./pages/contacto.html">
+            <button type="button" class="btn bg-violet text-violet btn-lg mb-3">Contratame!
             </button>
+          </a>
+            </article>
           </article>
           <article class="col-sm-12 col-md-6 col-lg-6">
             <img
-              src="img/paraheader/yootro.png"
-              alt="imagen de presentación"
+              src="./img/paraheader/yootro.png"
+              alt="imagen presentación de portafolio"
               class="img-index w-100"
             />
           </article>
