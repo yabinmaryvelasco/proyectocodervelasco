@@ -12,7 +12,11 @@
   color: #5e538a;
 }
 #botonera img {
-  width: 60px;
+  width: 110px;
+}
+
+.img-index {
+  width: 90%;
 }
 
 .text-center {
@@ -32,6 +36,105 @@ h1 {
 
 h3 {
   font-size: 25px;
+}
+
+/*testimoniales*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+#testimoniales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.testimoniales-heading {
+  letter-spacing: 1px;
+  margin: 30px 0;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimoniales-heading h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #bc3fb8;
+  padding: 10px 20px;
+}
+
+.testimoniales-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.testimoniales-box {
+  width: 500px;
+  box-shadow: 2px 2px 20px #bc3fb8;
+  background-color: white;
+  padding: 20px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.perfil-img {
+  width: 50%;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.perfil-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: cover;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+}
+
+.name-user {
+  display: flex;
+  flex-direction: column;
+}
+.name-user strong {
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+.name-user span {
+  font-size: 0.8rem;
+}
+
+.comentarios {
+  color: #aa61ba;
+}
+
+.box-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cliente-comentario p {
+  font-size: 0.9rem;
+  width: 100%;
 }
 
 .sobre, .contacto, .portafolio, .servicios {
@@ -142,6 +245,10 @@ form {
   box-sizing: border-box;
   margin-top: 20px;
   border-radius: 7px;
+  border: 2px solid #c293cc;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .formulario {
@@ -157,6 +264,7 @@ textarea {
   width: 80%;
   margin-bottom: 10px;
   padding: 0;
+  margin: 4px;
   box-sizing: border-box;
   font-size: 15px;
   display: flex;
@@ -171,63 +279,65 @@ textarea {
 }
 
 /*FOOTER*/
-.pie-pagina {
-  /*padding*/
+footer {
   width: 100%;
-  background-color: rgba(204, 200, 200, 0.516);
+  padding: 50px 0;
+  background-image: url(../img/footer/background-footer.svg);
+  background-size: cover;
 }
 
-.pie-pagina .grupo-2 {
-  width: 20%;
-  max-width: 1200%;
+.container__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
   margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  padding: 5px 0px;
+  margin-top: 100px;
+}
+
+.box__footer {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  padding: 40px;
 }
-
-.pie-pagina .grupo-2 .box .pie__icon--sm {
-  width: 50%;
-  padding: 10px;
+.box__footer h2 {
+  color: #343434;
+  font-weight: 700;
 }
-
-.pie-pagina .grupo-2 .box .red-social a {
-  display: inline-block;
+.box__footer a {
+  margin-top: 10px;
+  color: #bc3fb8;
+  font-weight: 600;
   text-decoration: none;
-  width: 50%;
-  height: 50px;
-  line-height: 45px;
+}
+.box__footer .logo img {
+  width: 180px;
+}
+.box__footer a:hover {
+  opacity: 0.8;
+}
+.box__footer a .fab {
+  font-size: 20px;
 }
 
-.pie-pagina .grupo-1 h4 {
-  padding: 20px;
-  margin-bottom: 25px;
-  font-size: 20px;
-  color: #5e538a;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: space-around;
-  align-items: center;
+.box__copyright {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0 40px;
+}
+.box__copyright p {
+  margin-top: 20px;
+  color: #bc3fb8;
+}
+.box__copyright hr {
+  border: none;
+  height: 3px;
+  background-color: #bc3fb8;
 }
 
 /* RESPONSIVE*/
 @media screen and (max-width: 1200px) and (min-width: 280px) {
-  .pie-pagina .grupo-2 {
-    width: 100%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 10%;
-    padding: 10% 0%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
   .parrafo {
     width: 100%;
   }
@@ -247,6 +357,15 @@ textarea {
   form {
     width: 270px;
   }
+}
+.testimoniales-heading h1 {
+  font-size: 1.1rem;
+}
+
+.parrafo {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

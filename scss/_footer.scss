@@ -1,42 +1,57 @@
 /*FOOTER*/
 
-.pie-pagina {
-  /*padding*/
+footer {
   width: $w-100;
-  background-color: $gris;
+  padding: 50px $p-0;
+  background-image: url(../img/footer/background-footer.svg);
+  background-size: cover;
 }
-.pie-pagina .grupo-2 {
-  width: $w-20;
-  max-width: 1200%;
+
+.container__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
   margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  padding: 5px 0px;
+  margin-top: 100px;
+}
+
+.box__footer {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  h2 {
+    color: $footerColor;
+    font-weight: 700;
+  }
+  a {
+    margin-top: 10px;
+    color: $rosa;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .logo img {
+    width: 180px;
+  }
+  a:hover {
+    opacity: 0.8;
+  }
+  a .fab {
+    font-size: $fs-20;
+  }
 }
-.pie-pagina .grupo-2 .box .pie__icon--sm {
-  width: $w-50;
-  padding: $p-10;
-}
-.pie-pagina .grupo-2 .box .red-social a {
-  display: inline-block;
-  text-decoration: none;
-  width: $w-50;
-  height: 50px;
-  line-height: 45px;
-}
-.pie-pagina .grupo-1 h4 {
-  padding: $p-20;
-  margin-bottom: $mb;
-  font-size: $fs-20;
-  color: $botoneraColor;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: space-around;
-  align-items: center;
+.box__copyright {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: $p-0 40px;
+  p {
+    margin-top: 20px;
+    color: $rosa;
+  }
+  hr {
+    border: none;
+    height: 3px;
+    background-color: $rosa;
+  }
 }

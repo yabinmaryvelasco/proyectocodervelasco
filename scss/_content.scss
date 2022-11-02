@@ -110,6 +110,10 @@ form {
   box-sizing: border-box;
   margin-top: 20px;
   border-radius: 7px;
+  border: 2px solid $secondaryColor;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .formulario {
   color: $rosa;
@@ -123,6 +127,7 @@ textarea {
   width: $w-80;
   margin-bottom: 10px;
   padding: $p-0;
+  margin: 4px;
   box-sizing: border-box;
   font-size: $fs-15;
   display: flex;
